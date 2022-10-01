@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1664597021 source:c:\users\vinic\desktop\projetos\jogo-da-velha\c\jogodavelha\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
