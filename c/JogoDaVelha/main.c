@@ -52,7 +52,24 @@ int main()
         }
         turn++;
 
+        validation = checkVictory(game);
     }
 
+    printf("\nGame Over");
+    return 0;
+}
 
+
+//function to check if someone win
+int checkVictory(int gameVar[3][3]){
+    int validation = 1;
+
+
+
+   /* for(int i = 0; i < 3; i++)
+        for(int j = 0; j < 3; j++)
+            printf("%d\n", gameVar[i][j]);
+    */
+
+    return validation;
 }
