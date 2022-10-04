@@ -12,7 +12,6 @@ int main()
     char gameString[3][3];
 
     printf("BEM VINDO AO JOGO DA VELHA EM C");
-    printf("\nAntes de começar vamos esclarecer algumas regras:\nDigite 1 para utilizar o X.\nDigite 0 para representar a O");
     printf("\nPressione ENTER para começar");
     getch();
     system("cls");
@@ -198,7 +197,6 @@ int checkDraw(int gameVar[3][3]){
 
 int checkBoard(int gameVar[3][3], int cordXVar, int cordYVar){
     if(gameVar[cordXVar][cordYVar] == 1 || gameVar[cordXVar][cordYVar] == 0){
-        //printf("Print de dentro da função checkboard -> espaço utilizado");
         return 1; //space already used
     }
     else
