@@ -32,14 +32,20 @@ function play(position){
         document.getElementById(`opt${situation.opt2}`).setAttribute("class", "option win");
         document.getElementById(`opt${situation.opt3}`).setAttribute("class", "option win");
 
-        window.setTimeout(gameOver(), 3000);
+        setTimeout(() =>{
+            restart();
+        },3000);
         
     }
+    else if(checkDraw() == 1){
 
-    let draw = checkDraw();
+        for(let i = 0; i < 9; i++){
+            document.getElementById(`opt${i}`).setAttribute("class", "option draw");
+        }
 
-    if(draw == 1){
-        //gameOver();
+        setTimeout(() =>{
+            restart();
+        },3000);
     }
     
     
@@ -99,12 +105,6 @@ function checkDraw(){
     return 1;
 }
 
-function gameOver(){
-    //document.getElementById("container").style.filter = "blur(10px)";
-    document.getElementById("gameOver").style.display = "block";
-    
-}
-
 function restart(){
-    
+    window.location.reload()
 }

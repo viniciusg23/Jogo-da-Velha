@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,7 +18,7 @@
     <main class="endGame">
         <div id="gameOver">
             <h2>Game Over</h2>
-            <div id="button" onclick="window.location.reload()"><b>REINICIAR</b></div>
+            <div id="button" onclick="restart()"><b>REINICIAR</b></div>
         </div>
         <div id="container">
             <div class="option" id="opt0" onclick="play('0')">
@@ -48,9 +51,6 @@
         </div>
     </main>
 
-    <!-- <footer>
-
-    </footer> -->
     <script src="./app.js"></script>
 </body>
 </html>

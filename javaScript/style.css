@@ -1,16 +1,28 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Lato', sans-serif;
 }
 
-@keyframes changeColor {
-	0% {color: green;}
-    100% {color: black;}
+@keyframes win {
+    0% {color: green;}
+	100% {color: black;}
+}
+
+@keyframes draw{
+    0% {color: red;}
+	100% {color: black;}
 }
 
 .win{
-    animation-name: changeColor;
-	animation-duration: 10ms;
+    animation-name: win;
+	animation-duration: 1s;
+	animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+}
+.draw{
+    animation-name: draw;
+	animation-duration: 1s;
 	animation-iteration-count: 3;
 }
 
@@ -64,7 +76,6 @@ h2{
 
 #container{
     margin-top: 3em;
-    /* width: 160px; */
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
@@ -88,11 +99,4 @@ h2{
 
 .option:hover{
     background-color: #e0ded5;
-}
-
-.win{
-    animation-name: changeColor;
-	animation-duration: 1s;
-
-	animation-iteration-count: 3;
 }
