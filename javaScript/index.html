@@ -12,7 +12,11 @@
         <h1>Jogo do Velha</h1>
     </header>
 
-    <main>
+    <main class="endGame">
+        <div id="gameOver">
+            <h2>Game Over</h2>
+            <div id="button" onclick="window.location.reload()"><b>REINICIAR</b></div>
+        </div>
         <div id="container">
             <div class="option" id="opt0" onclick="play('0')">
                 
@@ -44,10 +48,9 @@
         </div>
     </main>
 
-    <footer>
+    <!-- <footer>
 
-    </footer>
-    <script src="./controler.js"></script>
+    </footer> -->
     <script src="./app.js"></script>
 </body>
 </html>
