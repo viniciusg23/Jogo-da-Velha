@@ -3,6 +3,11 @@
     padding: 0px;
 }
 
+@keyframes changeColor {
+	0% {background-color: black;}
+	100% {background-color: green;}
+}
+
 body{
     background-color: #F9F5EB;
 }
@@ -48,4 +53,11 @@ main{
 
 .option:hover{
     background-color: #e0ded5;
+}
+
+.win{
+    animation-name: changeColor;
+	animation-duration: 1s;
+
+	animation-iteration-count: 3;
 }
