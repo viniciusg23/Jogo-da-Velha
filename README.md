@@ -9,7 +9,8 @@ Para jogar nesta versão do projeto, é necessário informar as coordenadas (x,y
 
 
 ### Projeto em JavaScript
-[Link do Projetro](https://viniciusg23.github.io/Jogo-da-Velha/javaScript/)
+**[Link do Projetro](https://viniciusg23.github.io/Jogo-da-Velha/javaScript/)**
+
 Por ser uma linguagem muito mais moderna e com mais possibilidades, eu criei uma interface gráfica para o jogo.
 
 ![git-jogo-da-velha-js](./readme/jogo_da_velha_js.gif)
